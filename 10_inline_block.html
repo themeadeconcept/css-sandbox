@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block styling</title>
+</head>
+<style>
+  li {
+    display: inline;
+  }
+
+  li a {
+    padding-right: 20px;
+  }
+
+  img {
+    /* can't do margin:auto on an inline element, so must display:block */
+    display: block;
+    margin: auto;
+  }
+
+  .box {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    /* Can't use width on inline elements, solution is inline-block */
+    width: 32.8%;
+    display: inline-block;
+  }
+</style>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+
+  <br><br>
+
+  <img src="./img/musical-transparent.png" alt="My Image">
+
+  <br><br>
+
+  <div class="box">
+    <h3>Heagin</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe et odio nostrum autem libero pariatur quidem. A aspernatur delectus dignissimos!</p>
+  </div>
+  <div class="box">
+    <h3>Heagin</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe et odio nostrum autem libero pariatur quidem. A aspernatur delectus dignissimos!</p>
+  </div>
+  <div class="box">
+    <h3>Heagin</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe et odio nostrum autem libero pariatur quidem. A aspernatur delectus dignissimos!</p>
+  </div>
+</body>
+</html>
